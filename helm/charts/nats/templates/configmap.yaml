@@ -134,6 +134,7 @@ data:
 
       routes = [
         {{ include "nats.clusterRoutes" . }}
+        {{ include "nats.extraRoutes" . }}
       ]
       cluster_advertise: $CLUSTER_ADVERTISE
 

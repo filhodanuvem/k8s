@@ -71,6 +71,11 @@ Return the NATS cluster routes.
 {{- end -}}
 {{- end }}
 
+{{- define "nats.extraRoutes" -}}
+{{- range $i, $url := until (.Values.nats.extraRoutes | int) -}}
+{{- printf "%s," $url   -}}
+{{- end -}}
+{{- end }}
 
 {{- define "nats.tlsConfig" -}}
 tls {

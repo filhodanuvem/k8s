@@ -45,6 +45,8 @@ nats:
 
   resources: {}
 
+  extraRoutes: []
+
   # Server settings.
   limits:
     maxConnections:
