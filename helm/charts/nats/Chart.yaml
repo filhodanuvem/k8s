@@ -7,7 +7,7 @@ keywords:
   - messaging
   - cncf
 version: 0.10.0
-home: http://github.com/nats-io/k8s
+home: https://github.com/filhodanuvem/k8s
 maintainers:
   - name: Waldemar Quevedo
     url: https://github.com/wallyqs
