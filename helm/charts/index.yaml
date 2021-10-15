@@ -151,8 +151,8 @@ entries:
     version: 0.7.4
   nats:
   - apiVersion: v2
-    appVersion: 2.6.1
-    created: "2021-09-29T10:54:50.225792-07:00"
+    appVersion: 2.6.2
+    created: "2021-10-15T10:54:50.225792-07:00"
     description: A Helm chart for the NATS.io High Speed Cloud Native Distributed
       Communications Technology.
     digest: 23a70e10ab513af51488f763100b223284d44971261177e0f7a722758c662add
