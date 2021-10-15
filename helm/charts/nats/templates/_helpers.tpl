@@ -72,7 +72,7 @@ Return the NATS cluster routes.
 {{- end }}
 
 {{- define "nats.extraRoutes" -}}
-{{- range $i, $url := until (.Values.nats.extraRoutes | int) -}}
+{{- range $i, $url := .Values.nats.extraRoutes -}}
 {{- printf "%s," $url   -}}
 {{- end -}}
 {{- end }}
