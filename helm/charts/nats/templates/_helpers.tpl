@@ -19,6 +19,14 @@ Expand the name of the chart.
 {{- end -}}
 {{- end -}}
 
+{{- define "nats.serverName" -}}
+{{- if .Value.nats.serverNamePrefix -}}
+{{- printf "%s-$(POD_NAME)" .Value.nats.serverNamePrefix  -}}
+{{- else -}}
+{{- print "$(POD_NAME)" -}}
+{{- end -}}
+{{- end -}}
+
 {{/*
 Create chart name and version as used by the chart label.
 */}}
