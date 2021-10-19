@@ -20,8 +20,8 @@ Expand the name of the chart.
 {{- end -}}
 
 {{- define "nats.serverName" -}}
-{{- if .Value.nats.serverNamePrefix -}}
-{{- printf "%s-$(POD_NAME)" .Value.nats.serverNamePrefix  -}}
+{{- if .Values.nats.serverNamePrefix -}}
+{{- printf "%s-$(POD_NAME)" .Values.nats.serverNamePrefix  -}}
 {{- else -}}
 {{- print "$(POD_NAME)" -}}
 {{- end -}}
