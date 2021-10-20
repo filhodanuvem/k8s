@@ -17,7 +17,7 @@ data:
     #             #
     ###############
     http: 8222
-    server_name: {{ include "nats.serverName" . }}
+    server_name: {{- tpl (include "nats.serverName" .) $ }}
 
     {{- if .Values.nats.tls }}
     #####################
